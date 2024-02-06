@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    transition: .2s linear;
+    border: none;
+    outline: none;
+}
+section{
+    padding:2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgba(228, 165, 176, 0.491);
+    width: 100%;
+}
+.heading span{
+    color: rgb(205, 105, 122);
+}
+.btn{
+    display: inline-block;
+    margin-top:1rem ;
+    border-radius:5rem ;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 2.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: Arial Black;
+}
+.btn:hover{
+    background-color: rgb(243, 146, 162);
+}
+header{
+    position:fixed;
+    top:0; left:0 ; right:0;
+    background-color:#ffffff;
+     width: 100%;
+    height: 80px;
+    padding:2erm 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+.logo{
+    display: flex;
+    font-size: 2rem;
+    color:rgb(16, 4, 6);
+    font-weight: bolder;
+    position: fixed;
+    margin-left: 70px;
+    font-family: 'Lucida Calligraphy';
+}
+header .logo span{
+    color: rgb(161, 38, 59);
+}
+
+.navbar{
+    flex-basis:300px;
+    display: flex;
+    border:5px;
+    border-radius: 7px;
+    position:fixed;
+    z-index: 1;
+}
+.navbar ul{
+    flex-basis:300px;
+    width: 100%;
+    height: 70px;
+    font-size:  20px;
+    z-index: 1;
+    display: flex;
+    justify-content: center ;
+    margin-top: 60px;
+    margin-bottom: 16px;
+    margin-left: 500px;
+}
+.navbar ul li{
+    display:inline;
+    margin-right: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color:#666;
+    transition: 0.5 ease;
+}
+.navbar a:hover{
+     text-decoration: none;
+     color:rgb(244, 3, 83);
+}
+header #toggler{
+    display: none;
+}
+header .icons{
+    font-size: 3rem;
+    color: #333;
+    margin-left: 1120px;
+}
+header .icons .bb{
+    margin-right: 13px;
+    margin-bottom: 10px;
+}
+header .icons .hh{
+    margin-bottom: 10px;
+    margin-left: 13px;
+}
+header .icons .aa{
+    margin-bottom: 10px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(file:///C:/Users/ASUS/OneDrive/html%20dossie/kk.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+}
+.home .content span{
+    font-size: 3.5rem;
+    color:rgb(230, 102, 123);
+    line-height: 1.5;
+    
+}
+.home .content p{
+    color:#847c7c;
+    line-height: 1.5;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .vidio-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+.about .row .vidio-container video{
+    width: 70%;
+    border: 1.5rem solid #fff;
+    border-radius: 5rem;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+    margin-left: 35%;
+    margin-top: -50px;
+}
+.about .row .vidio-container h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    width: 100%;
+    background-color: #ffffffc0;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+    margin-left: 200px;
+}
+.about .row .content{
+    flex: 1 1 40rem;
+    margin-top: -500px;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+.about .row .content p{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.725);
+    padding: 5rem 0;
+    padding-top: 1rem;
+    width: 40%;
+}
+.products .box-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+}
+.products .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+    
+}
+.products .box-container .box .discount{
+    position: absolute;
+    top: 1rem;left: 1rem;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    color: rgb(114, 100, 102);
+    background-color: rgba(228, 165, 176, 0.491);
+    z-index: 1;
+    border-radius: .5rem;
+
+}
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.products .box-container .box .image img{
+    height: 10rem;
+}
+.products .box-container .box:hover .image img{
+    transform: scale(1.1 );
+}
+.products .box-container .box:hover .discount{
+    transform: scale(1.1 );
+    background-color: rgba(255, 0, 0, 0.861);
+    color: white;
+}
+.products .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.products .box-container .box .content h3{
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Lucida Calligraphy';
+}
+.products .box-container .box .content .prix{
+     font-size: 1.4rem;
+     color: rgb(238, 94, 118);
+     font-weight: bolder;
+     padding-top: 1rem;
+}
+.products .box-container .box .content .prix span{
+    font-size: 1rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 80%;
+    height: 30%;
+}
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+    background: #cdc7c7;
+    border-radius: .5rem;
+}
+
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin: .7rem  0;
+    width: 80%;
+    
+}
+.contact .row form .box:focus{
+    border-color: rgb(248, 137, 156);
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+.footer .box-container{
+    position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   
+
+}
+.footer .box-container .box{
+    flex: 1 1 12rem;
+
+}
+.footer .box-container .box h3{
+    color:rgb(249, 34, 69);
+    font-size: 1.5rem;
+    padding: .1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover{
+    color: rgb(248, 56, 88);
+    text-decoration: underline;
+    transform: scale(1.1 );
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 2.3rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+.footer .credit span{
+    font-family: 'Lucida Calligraphy';
+    color: rgb(238, 12, 49);
+}
+.footer .credit:hover{
+   background-color: rgb(224, 119, 136);
+    
+}
