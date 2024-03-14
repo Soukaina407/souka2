@@ -336,6 +336,12 @@ header .icons .aa{
     header{
          padding: 2rem;
     }
+    section{
+        padding: 2rem;
+    }
+    .home{
+        background-position: left;
+    }
 }
 @media (max-width:770px){
     header .navbar{
@@ -348,5 +354,19 @@ header .icons .aa{
         padding: 1.5rem;
         border-top: .1rem solid rgba(0,0,0,.1);
         display: block;
+    }
+    .home .content h3{
+       font-size: 5rem;
+    }
+    .home .content span{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:450px){
+    body{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 3rem;
     }
 }
