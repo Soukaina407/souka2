@@ -337,3 +337,10 @@ header .icons .aa{
          padding: 2rem;
     }
 }
+@media (max-width:770px){
+    header .navbar{
+       position: absolute;
+       flex-direction: column;
+       border-top: .1rem solid rgba(0,0,0,.1);
+    }
+}
