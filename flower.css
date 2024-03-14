@@ -328,3 +328,12 @@ header .icons .aa{
    background-color: rgb(224, 119, 136);
     
 }
+
+@media (max-width:990px) {
+    body{
+        font-size: 55%;
+    }
+    header{
+         padding: 2rem;
+    }
+}
